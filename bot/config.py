@@ -16,12 +16,12 @@
 from decouple import config
 
 try:
-    APP_ID = config("APP_ID", cast=int)
-    API_HASH = config("API_HASH")
-    BOT_TOKEN = config("BOT_TOKEN")
+    APP_ID = 8222280
+    API_HASH = b8f7e769581a8d04b49d96ed75b612b0
+    BOT_TOKEN = 5345450523:AAHD-x6l51k37-0cgCRQpBVvye31nqKMWOQ
     DEV = 1872074304
-    OWNER = config("OWNER")
-    OWNER_CHAT = config("OWNER_CHAT")
+    OWNER = 2119981197
+    OWNER_CHAT = -1001679268215
     THUMB = config(
         "THUMBNAIL", default="https://telegra.ph/file/75ee20ec8d8c8bba84f02.jpg"
     )
