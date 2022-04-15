@@ -1,0 +1,6 @@
+aiohttp
+python-decouple
+psutil
+tgcrypto
+https://github.com/kaif-00z/Telethon/archive/master.zip
+html_telegraph_poster
