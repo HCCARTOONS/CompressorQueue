@@ -54,5 +54,6 @@ except Exception as e:
     LOGS.info(str(e))
     exit()
 
+
 async def startup():
-    await bot.send_message(int(OWNER_CHAT),"**Bot is Successfully Deployed**")
+    await bot.send_message(int(OWNER_CHAT), "**Bot is Successfully Deployed**")

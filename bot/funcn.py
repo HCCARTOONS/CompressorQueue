@@ -13,9 +13,10 @@
 # License can be found in <
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
+from urllib.parse import unquote
+
 from . import *
 from .config import *
-from urllib.parse import unquote
 
 WORKING = []
 QUEUE = {}
@@ -67,7 +68,7 @@ def ts(milliseconds: int) -> str:
 def hbs(size):
     if not size:
         return ""
-    power = 2 ** 10
+    power = 2**10
     raised_to_pow = 0
     dict_power_n = {0: "B", 1: "K", 2: "M", 3: "G", 4: "T", 5: "P"}
     while size > power:
@@ -173,6 +174,7 @@ async def skip(e):
 async def fast_download(e, download_url, filename=None, _time=None):
     if not _time:
         _time = time.time()
+
     def progress_callback(d, t):
         return (
             asyncio.get_event_loop().create_task(

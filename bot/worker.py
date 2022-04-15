@@ -269,6 +269,7 @@ async def encod(event):
         LOGS.info(er)
         WORKING.clear()
 
+
 """
 async def thumbnail(event):
     if event.is_private:
