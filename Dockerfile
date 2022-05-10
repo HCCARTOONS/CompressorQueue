@@ -1,8 +1,11 @@
-FROM python:3.9.2-slim-buster
-RUN mkdir /bot && chmod 777 /bot
-WORKDIR /bot
-ENV DEBIAN_FRONTEND=noninteractive
-RUN apt -qq update && apt -qq install -y git wget pv jq python3-dev ffmpeg mediainfo
-COPY . .
-RUN pip3 install -r requirements.txt
-CMD ["bash","run.sh"]
+FROM debian:latest
+
+RUN apt update && apt upgrade -y
+RUN apt install git curl python3-pip ffmpeg -y
+RUN pip3 install -U pip
+RUN cd /
+RUN git clone https://github.com/HCCARTOONS/CompressorQueue
+RUN cd CompressorQueue
+WORKDIR /CompressorQueue
+RUN pip3 install -U -r requirements.txt
+CMD python3 main.py
