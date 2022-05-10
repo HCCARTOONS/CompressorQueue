@@ -13,3 +13,6 @@
 `FFMPEG` : Put Your FFMPEG Code with "{}" as input and output. (Eg. `ffmpeg -i "{}" -preset veryfast -vcodec libx265 -crf 27 "{}"`)
 
 - [Main Source](https://github.com/1Danish-00/CompressorBot)
+
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/N44Y-6?referralCode=ZsZKBJ)
