@@ -15,4 +15,4 @@
 - [Main Source](https://github.com/1Danish-00/CompressorBot)
 
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/N44Y-6?referralCode=ZsZKBJ)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/N44Y-6)
